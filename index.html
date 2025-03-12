@@ -9,29 +9,176 @@
     <script src="script.js"></script>
     <title>MD Fahim MOntasir</title>
 </head>
+<style>
+    /* From Uiverse.io by kennyotsu */
+    .card {
+        /* color used to softly clip top and bottom of the .words container */
+        --bg-color: #212121;
+        background-color: var(--bg-color);
+        padding: 1rem 2rem;
+        border-radius: 1.25rem;
+    }
+
+    .loader {
+        color: rgb(124, 124, 124);
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 25px;
+        -webkit-box-sizing: content-box;
+        box-sizing: content-box;
+        height: 40px;
+        padding: 10px 10px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        border-radius: 8px;
+    }
+
+    .words {
+        overflow: hidden;
+        position: relative;
+    }
+
+    .words::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(var(--bg-color) 10%,
+                transparent 30%,
+                transparent 70%,
+                var(--bg-color) 90%);
+        z-index: 20;
+    }
+
+    .word {
+        display: block;
+        height: 100%;
+        padding-left: 6px;
+        color: #956afa;
+        animation: spin_4991 4s infinite;
+    }
+
+    @keyframes spin_4991 {
+        10% {
+            -webkit-transform: translateY(-102%);
+            transform: translateY(-102%);
+        }
+
+        25% {
+            -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+        }
+
+        35% {
+            -webkit-transform: translateY(-202%);
+            transform: translateY(-202%);
+        }
+
+        50% {
+            -webkit-transform: translateY(-200%);
+            transform: translateY(-200%);
+        }
+
+        60% {
+            -webkit-transform: translateY(-302%);
+            transform: translateY(-302%);
+        }
+
+        75% {
+            -webkit-transform: translateY(-300%);
+            transform: translateY(-300%);
+        }
+
+        85% {
+            -webkit-transform: translateY(-402%);
+            transform: translateY(-402%);
+        }
+
+        100% {
+            -webkit-transform: translateY(-400%);
+            transform: translateY(-400%);
+        }
+    }
+
+    button {
+        font-size: 1.4em;
+        padding: 0.6em 0.8em;
+        border-radius: 0.5em;
+        border: none;
+        background-color: #000;
+        color: #fff;
+        cursor: pointer;
+        box-shadow: 2px 2px 3px #000000b4;
+    }
+
+    .container {
+        position: relative;
+        padding: 3px;
+        background: linear-gradient(90deg, #03a9f4, #f441a5);
+        border-radius: 0.9em;
+        transition: all 0.4s ease;
+    }
+
+    .container::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        border-radius: 0.9em;
+        z-index: -10;
+        filter: blur(0);
+        transition: filter 0.4s ease;
+    }
+
+    .container:hover::before {
+        background: linear-gradient(90deg, #03a9f4, #f441a5);
+        filter: blur(1.2em);
+    }
+
+    .container:active::before {
+        filter: blur(0.2em);
+    }
+   
+</style>
 
 <body>
-    <div class="about">
-        <div class="left">
-            <h3>I'm a front-end developer specializing in React.js, JavaScript, CSS, and CSS frameworks</h3>
-            <div class="info">
-                <h2>I'm MD Fahim Montasir</h2>
-                <p>Coding isn't just a hobby; it is my first love, and I cannot imagine life without it.</p>
-                <div class="buttons">
-                    <button class="hire">
-                        Hire me <i class="fas fa-plus"></i>
-                    </button>
-                    <button class="email">
-                        Email: md6566003@gmail.com
-                    </button>
+    <div class="card">
+        <div class="card2">
+            <div class="about">
+                <div class="left">
+                    <div class="card">
+                        <div class="loader">
+                            <p>I'm a front-end developer specializing in</p>
+                            <div class="words">
+                                <span class="word">React JS</span>
+                                <span class="word">JavaScript</span>
+                                <span class="word">CSS</span>
+                                <span class="word">Node JS</span>
+                                <span class="word">Next JS</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <h2>I'm MD Fahim Montasir</h2>
+                        <p>Coding isn't just a hobby; it is my first love, and I cannot imagine life without it.</p>
+                        <div class="buttons">
+                            <div class="container">
+                                <button class="button">Hire me</button>
+                            </div>
+                            <button class="email">
+                                Email: md6566003@gmail.com
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <a class="online" href="#"><i class="fas fa-circle"></i> Available For Job</a>
+                    <img src="fahimprofile.png">
                 </div>
             </div>
         </div>
-        <div class="right">
-            <a class="online" href="#"><i class="fas fa-circle"></i> Available For Job</a>
-            <img src="fahimprofile.png">
-        </div>
-    </div>
+      </div>
+    
 
     <div class="works">
         <div class="left">
